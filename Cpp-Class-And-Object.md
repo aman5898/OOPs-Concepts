@@ -4,8 +4,7 @@ Memory management is more explicit in C++.
 Creating a Class
 Use the class keyword, similar to Java.
 
-cpp
-Copy code
+```cpp
 class Car {
     // Fields (private by default)
     std::string brand;
@@ -34,11 +33,17 @@ Car::~Car() {
 void Car::displayInfo() {
     std::cout << "Car Brand: " << brand << ", Year: " << year << std::endl;
 }
+```
+
 Creating an Object
+
 Objects can be created on the stack or the heap (using pointers).
+
 Stack: Car myCar("Toyota", 2021);
+
 Heap: Car* myCar = new Car("Toyota", 2021);
-cpp
+
+```cpp
 Copy code
 // Main.cpp
 
@@ -56,6 +61,7 @@ int main() {
 
     return 0;
 }
+```
 Additional C++ Features:
 Operator Overloading: You can define custom behavior for operators in C++.
 Templates: C++ supports generic programming through templates.
