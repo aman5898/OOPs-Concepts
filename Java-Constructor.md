@@ -1,35 +1,50 @@
-Constructors in Java
-Overview of Classes and Objects
-Class: A blueprint for an object that defines its properties and behaviors.
-Object: An instance of a class.
-Introduction to Constructors
+## Constructors in Java
+
+### Overview of Classes and Objects
+
+- **Class:** A blueprint for an object that defines its properties and behaviors.
+
+- **Object:** An instance of a class.
+
+### Introduction to Constructors
+
 A constructor in Java is a special method used to initialize objects. It is called when an instance of a class is created.
 
-Example Class: Student
-java
+### Example Class
+
+- **Class Name:** Student
+
+```java
 
 public class Student {
     String name;
     int age;
     double psp;
 }
-Creating an Object
+```
+## Creating an Object
+
 To create an object of the Student class, we use:
 
-java
+
+```java
 
 Student st = new Student();
-Here, Student is the data type, st is the variable name, and new Student() invokes the constructor.
+```
+## Understanding Constructors
 
-Understanding Constructors
-The Student() in new Student() is the constructor.
-If no constructor is explicitly defined, Java provides a default constructor.
-Default Constructor
-Automatically created if no constructor is defined.
-Initializes each attribute to its default value: 0 for integers, null for objects, 0.0 for doubles, etc.
-Only assigns default values if attributes are not already initialized.
-Example of Default Constructor
-java
+- The `Student` in `new Student()` is the constructor.
+- If no constructor is explicitly defined, Java provides a default constructor.
+
+### Default Constructor
+
+- Automatically created if no constructor is defined.
+- Initializes each attribute to its default value: 0 for integers, null for objects, 0.0 for doubles, etc.
+- Only assigns default values if attributes are not already initialized.
+
+### Example of Default Constructor
+
+```java
 
 class Student {
     String name;
@@ -45,19 +60,26 @@ class Student {
         univName = null;
     }
 }
-Note: Writing the default constructor explicitly is not necessary as it is automatically generated.
+```
+**Note:** Writing the default constructor explicitly is not necessary as it is automatically generated.
 
-When is a Default Constructor Not Created?
+### When is a Default Constructor Not Created?
+
 A default constructor is not created if a class has any other constructor defined.
-Characteristics of a Constructor
-Same name as the class.
-No return type, not even void.
-Can be public, private, protected, or package-private (no modifier).
-Manual Constructor
+
+### Characteristics of a Constructor
+
+- Same name as the class.
+- No return type, not even void.
+- Can be public, private, protected, or package-private (no modifier).
+
+## Manual Constructor
+
 Creating a constructor manually allows for more control and customization when creating objects.
 
-Example of a Manual Constructor
-java
+### Example of a Manual Constructor
+
+```java
 
 public class Student {
     String name;
@@ -71,20 +93,24 @@ public class Student {
         univName = universityName;
     }
 }
-Usage:
+```
+### Usage:
 
-java
+```java
 
 public class Client {
     public static void main(String[] args) {
         Student st = new Student("Utkarsh", "JIIT");
     }
 }
-Copy Constructor
+```
+## Copy Constructor
+
 A copy constructor creates a new object as a copy of an existing object.
 
-Example of a Copy Constructor
-java
+### Example of a Copy Constructor
+
+```java
 
 class Student {
     String name;
@@ -102,18 +128,22 @@ class Student {
         age = st.age;
     }
 }
-Usage:
+```
+### Usage:
 
-java
+```java
 
 Student st1 = new Student();
 st1.name = "Utkarsh";
 st1.age = 27;
 
 Student st2 = new Student(st1); // Using the copy constructor
-Use Case of Copy Constructor
-Useful for creating a new object with the same data as an existing object.
-Allows copying of private attributes that might not be accessible otherwise.
-Difference from Assignment
-Student st2 = st1; only points st2 to the same object as st1.
-A copy constructor creates a separate object with its own memory space.
+```
+
+## Use Case of Copy Constructor
+
+- Useful for creating a new object with the same data as an existing object.
+- Allows copying of private attributes that might not be accessible otherwise.
+
+**Difference from Assignment:** `Student st2 = st1;` only points `st2` to the same object as `st1`. A copy constructor creates a separate object with its own memory space.
+
