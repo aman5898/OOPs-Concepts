@@ -7,7 +7,6 @@ There is no direct equivalent to Java's default (package-private) access in C++,
 Public Modifier
 Similar to Java, public members in C++ are accessible from anywhere the object is visible.
 ```cpp
-Copy code
 class PublicExample {
 public:
     void display() {
@@ -19,7 +18,6 @@ Here, the display method is accessible from any part of the program.
 Private Modifier
 In C++, private members are accessible only within the same class.
 ```cpp
-Copy code
 class PrivateExample {
 private:
     int number;
@@ -34,7 +32,6 @@ Similar to Java, number and displayNumber are not accessible outside PrivateExam
 Protected Modifier
 Protected in C++ is similar to Java. It allows access within the same class, derived classes, but not from outside classes.
 ```cpp
-Copy code
 class Base {
 protected:
     void display() {
@@ -56,7 +53,6 @@ In C++, when no access modifier is specified, the default is private for classes
 To mimic Java's package-private access, you'd typically use private or protected and organize your code with careful use of friend classes or functions.
 
 ```cpp
-Copy code
 class DefaultExample {
     void display() {
         std::cout << "Default Access Modifier Example" << std::endl;
