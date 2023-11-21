@@ -7,7 +7,7 @@ A constructor in Java is a special method used to initialize objects. It is call
 
 Example Class: Student
 java
-Copy code
+
 public class Student {
     String name;
     int age;
@@ -17,7 +17,7 @@ Creating an Object
 To create an object of the Student class, we use:
 
 java
-Copy code
+
 Student st = new Student();
 Here, Student is the data type, st is the variable name, and new Student() invokes the constructor.
 
@@ -30,7 +30,7 @@ Initializes each attribute to its default value: 0 for integers, null for object
 Only assigns default values if attributes are not already initialized.
 Example of Default Constructor
 java
-Copy code
+
 class Student {
     String name;
     int age;
@@ -58,7 +58,7 @@ Creating a constructor manually allows for more control and customization when c
 
 Example of a Manual Constructor
 java
-Copy code
+
 public class Student {
     String name;
     private int age = 21;
@@ -74,7 +74,7 @@ public class Student {
 Usage:
 
 java
-Copy code
+
 public class Client {
     public static void main(String[] args) {
         Student st = new Student("Utkarsh", "JIIT");
@@ -85,7 +85,7 @@ A copy constructor creates a new object as a copy of an existing object.
 
 Example of a Copy Constructor
 java
-Copy code
+
 class Student {
     String name;
     int age;
@@ -105,7 +105,7 @@ class Student {
 Usage:
 
 java
-Copy code
+
 Student st1 = new Student();
 st1.name = "Utkarsh";
 st1.age = 27;

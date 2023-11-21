@@ -7,7 +7,7 @@ Inheritance represents a parent-child relationship between classes.
 It allows a child class to inherit properties and behaviors (methods and fields) from a parent class.
 Example of Inheritance
 java
-Copy code
+
 class Animal {
     void walk() {
         System.out.println("Animal walks");
@@ -26,7 +26,7 @@ The extends keyword in Java is used to establish an inheritance relationship.
 The child class inherits all non-private members of the parent class.
 Example of Parent-Child Code Relationship
 java
-Copy code
+
 class User {
     String userName;
     
@@ -53,7 +53,7 @@ When an object of a child class is created, the constructor of the parent class 
 If the child class does not explicitly call a super constructor, the default constructor of the parent class is invoked.
 Example of Constructor Chaining
 java
-Copy code
+
 class A {
     A() {
         System.out.println("Constructor of A");
@@ -82,7 +82,7 @@ The super keyword is used to explicitly call a parent class constructor.
 It must be the first statement in the child class constructor.
 Example Using super
 java
-Copy code
+
 class C extends B {
     C(String message) {
         super(); // Calls constructor of B

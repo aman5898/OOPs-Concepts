@@ -44,7 +44,7 @@ Stack: Car myCar("Toyota", 2021);
 Heap: Car* myCar = new Car("Toyota", 2021);
 
 ```cpp
-Copy code
+
 // Main.cpp
 
 int main() {
