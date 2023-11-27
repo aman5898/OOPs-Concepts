@@ -53,19 +53,6 @@ public:
 ```
 
 display is accessible in Derived due to inheritance.
-Default Access (No Modifier)
-In C++, when no access modifier is specified, the default is private for classes and public for structs.
-To mimic Java's package-private access, you'd typically use private or protected and organize your code with careful use of friend classes or functions.
-
-```cpp
-class DefaultExample {
-    void display() {
-        std::cout << "Default Access Modifier Example" << std::endl;
-    }
-};
-```
-
-`display` is accessible in `Derived` due to inheritance.
 
 ## Default Access (No Modifier)
 In C++, when no access modifier is specified, the default is private for classes and public for structs.
