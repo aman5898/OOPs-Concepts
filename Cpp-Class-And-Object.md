@@ -23,7 +23,7 @@ public:
 };
 
 // Car.cpp
-#include <iostream>
+#include bits/stdc++.h
 
 Car::Car(std::string b, int y) : brand(b), year(y) {}
 
